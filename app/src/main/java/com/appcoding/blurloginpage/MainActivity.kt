@@ -29,7 +29,6 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TextField
@@ -241,11 +240,11 @@ fun SigninBox() {
                 value = "",
                 onValueChange = { newvalue = it },
                 shape = RoundedCornerShape(30.dp),
-                colors = TextFieldDefaults.textFieldColors(
+                colors = TextFieldDefaults.colors(
                     focusedIndicatorColor = Color.Transparent,
                     disabledIndicatorColor = Color.Transparent,
                     unfocusedIndicatorColor = Color.Transparent,
-                    containerColor = Color.White
+                    focusedContainerColor = Color.White
                 ),
                 placeholder = { Text(text = "Email address") }
 
@@ -260,11 +259,11 @@ fun SigninBox() {
                 value = "",
                 onValueChange = { newvalue = it },
                 shape = RoundedCornerShape(30.dp),
-                colors = TextFieldDefaults.textFieldColors(
+                colors = TextFieldDefaults.colors(
                     focusedIndicatorColor = Color.Transparent,
                     disabledIndicatorColor = Color.Transparent,
                     unfocusedIndicatorColor = Color.Transparent,
-                    containerColor = Color.White
+                    focusedContainerColor = Color.White
                 ),
                 placeholder = { Text(text = "Password") },
                 visualTransformation = PasswordVisualTransformation()
