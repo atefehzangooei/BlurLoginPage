@@ -279,7 +279,7 @@ fun SigninBox() {
                 horizontalArrangement = Arrangement.Center
             ) {
                 Button(
-                    onClick = { /*TODO*/ },
+                    onClick = {},
                     shape = RoundedCornerShape(30.dp),
                     colors = ButtonDefaults.buttonColors(
                         containerColor = colorResource(id = R.color.button_blue),
@@ -321,7 +321,7 @@ fun SigninBox() {
 fun Signin_ButtonFacebook() {
 
     Button(
-        onClick = { /*TODO*/ },
+        onClick = {},
         modifier = Modifier.fillMaxWidth(),
         colors = ButtonDefaults.buttonColors(
             containerColor = colorResource(id = R.color.button_blue),
@@ -345,7 +345,7 @@ fun Signin_ButtonFacebook() {
 @Composable
 fun Signin_GoogleButton() {
     Button(
-        onClick = { /*TODO*/ },
+        onClick = {},
         modifier = Modifier.fillMaxWidth(),
         colors = ButtonDefaults.buttonColors(
             containerColor = Color.White,
@@ -383,7 +383,9 @@ fun Signin_NewUSer() {
             color = Color.White
         )
 
-        TextButton(onClick = { /* TODO*/ }) {
+        TextButton(
+            onClick = {}
+        ) {
             Text(
                 text = "Create an account",
                 fontSize = 14.sp,
